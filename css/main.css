@@ -1,34 +1,72 @@
 /* ----------------------------------------- global */
 
-h1 {
+body {
+    background-color: #B6CED9;
+    display: flex;
+    flex-direction: column;
+    font-family: "Yantramanav", helvetica, sans;
+    font-weight: 300;
+    min-height: 100vh;
+}
+p {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.3;
+    margin-bottom: 0.8em;
+}
+a {
+    color: #83431C;
+    text-decoration: none;
+}
+a:hover {
+    color: #B6CED9;
+}
+.header-text {
     color: #222;
     font-family: "Corben", helvetica, sans;
     font-size: 4em;
     margin: 2rem 0 1rem;
 }
-p {
-    color: #222;
-    font-family: "Yantramanav", helvetica, sans;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.3;
-    margin-bottom: 0.8em;
-}
 
 /* ----------------------------------------- header & footer */
 
 .header p, .footer p {
-    color: #FFF;
+    color: #B6CED9;
+    flex: 0 0 auto;
     font-weight: 100;
+}
+.nav-list li {
+    display: inline-block;
+    padding: 0 1em;
+}
+.nav-list li ~ li {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+.nav-list li ~ li:last-child {
+    padding-right: 0;
 }
 
 /* ----------------------------------------- header */
 
 .header {
+    box-sizing: border-box;
     background: #222;
     height: 10vh;
+    padding: 5vh 1.5em 0;
     position: fixed;
     width: 100%;
+}
+.header .sig-logo {
+    height: 10vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.header-nav .nav-list {
+    display: inline-block;
+    float: right;
+    list-style: none;
+    transform: translate(0, -50%);
 }
 
 /* ----------------------------------------- footer */
@@ -43,5 +81,12 @@ p {
 /* ----------------------------------------- content */
 
 .container {
+    flex: 1;
     padding: 10vh 5em 5vh;
+}
+.lead-content img {
+    float: right;
+    margin-left: 3em;
+    opacity: 0.6;
+    width: 25vw;
 }

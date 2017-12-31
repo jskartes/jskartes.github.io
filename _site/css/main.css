@@ -25,7 +25,7 @@ a:hover {
     color: #222;
     font-family: "Corben", helvetica, sans;
     font-size: 4em;
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 1.8rem;
 }
 
 /* ----------------------------------------- header & footer */
@@ -78,6 +78,13 @@ a:hover {
     position: relative;
     width: 100%;
 }
+.footer-copyright {
+    font-size: 0.8rem;
+    position: relative;
+    text-align: center;
+    top: 10vh;
+    transform: translate(0, -50%);
+}
 
 /* ----------------------------------------- content */
 
@@ -85,8 +92,13 @@ a:hover {
     flex: 1;
     padding: 10vh 5em 5vh;
 }
+.lead-content a:hover {
+    color: #83431C;
+    text-decoration: underline;
+}
 .lead-content img {
     float: right;
+    margin-bottom: 2em;
     margin-left: 3em;
     opacity: 0.6;
     width: 25vw;

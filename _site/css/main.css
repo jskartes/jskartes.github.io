@@ -63,6 +63,9 @@ a:hover {
     position: absolute;
     top: 0;
 }
+.header .sig-logo:hover {
+    background-color: #555;
+}
 .header-nav .nav-list {
     display: inline-block;
     float: right;
